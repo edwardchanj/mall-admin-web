@@ -14,7 +14,7 @@
           <div class="out-border">
             <div class="layout-title">前端项目</div>
             <div class="color-main address-content">
-              <a href="https://github.com/macrozheng/mall-admin-web">mall-admin-web</a>
+              <a href="https://github.com/macrozheng/parking-admin-web">parking-admin-web</a>
             </div>
           </div>
         </el-col>
