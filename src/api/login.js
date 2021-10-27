@@ -78,3 +78,24 @@ export function allocRole(data) {
     data: data
   })
 }
+export function getCurrent(id) {
+  return request({
+    url: '/user/current',
+    method: 'get',
+  })
+}
+
+export function getEmail(username) {
+  return request({
+    url: '/admin/retrieve/' + username,
+    method: 'get'
+  })
+}
+
+export function updateUser(id, data) {
+  return request({
+    url: '/user/update/' + id,
+    method: 'post',
+    data: data
+  })
+}

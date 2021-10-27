@@ -31,7 +31,44 @@ export const constantRouterMap = [
       component: () => import('@/views/home/index'),
       meta: {title: '首页', icon: 'home'}
     }]
+  },
+  {
+    path:'/user',
+    component: Layout,
+    redirect: '/user/edit',
+    name: 'user',
+    meta: {title: 'User Information', icon: 'ums'},
+    children: [
+      {
+        path: 'edit',
+        name: 'edit',
+        component: () => import('@/views/ums/edit/index'),
+        meta: {title: 'User Information Edit', icon: 'ums-admin'},
+        hidden: true
+      }
+    ],
+    hidden: true
+  },
+  {
+    path:'/pk',
+    component: Layout,
+    redirect: '/pk/pkSeason',
+    name: 'pk',
+    meta: {title: 'Parking Tasks', icon: 'ums'},
+    children: [
+      {
+        path: 'pkSeason',
+        name: 'pkSeason',
+        component: () => import('@/views/parking/admin/applySeason'),
+        meta: {title: 'Apply Season', icon: 'ums-admin'},
+        alwaysShow: true
+      }
+    ],
+    alwaysShow: true
+    
   }
+
+
 ]
 
 export const asyncRouterMap = [
