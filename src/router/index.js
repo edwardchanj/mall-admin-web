@@ -62,7 +62,15 @@ export const constantRouterMap = [
         component: () => import('@/views/parking/admin/applySeason'),
         meta: {title: 'Apply Season', icon: 'ums-admin'},
         alwaysShow: true
+      },
+      {
+        path: 'controlSeason',
+        name: 'controlSeason',
+        component: () => import('@/views/parking/admin/controlSeason'),
+        meta: {title: 'Terminate Season', icon: 'ums-admin'},
+        alwaysShow: true
       }
+
     ],
     alwaysShow: true
     

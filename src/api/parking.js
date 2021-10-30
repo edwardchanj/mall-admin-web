@@ -43,3 +43,11 @@ export function saveSeason(data) {
 
 
 
+export function getSeasonBySiteUser(params) {
+  return request({
+    url: '/pkSeason/seasonPass',
+    method: 'get',
+    params:params
+  })
+}
+
